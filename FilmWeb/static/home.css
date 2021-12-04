@@ -1,0 +1,134 @@
+body{
+    font-size: 14px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: black;
+    height: 800px;
+    background: linear-gradient(rgba(23, 20, 24, 0.8), rgba(187, 0, 0, 1));
+
+}
+
+#divLeft{
+    float: left;
+    width: 280px;
+    background-color: rgba(23, 20, 24, 1);
+    background: linear-gradient( rgba(187, 0, 0, 0.7), rgba(0, 0, 0, 0.219), rgba(255, 95, 17, 1), 
+    rgba(234, 0, 234, 1));
+    height: 400px;
+    padding: 5px;
+    margin-right: 30px;
+    border-radius: 7px;
+}
+
+#divRight{
+    background-color: rgba(23, 20, 24, 1);
+    background: linear-gradient( rgba(0, 124, 249, 0.8), rgba(255, 95, 17, 1));
+    height: 800px;
+    margin-left: 300px;
+    padding: 10px;
+    border-radius: 7px;
+    overflow: hidden;
+    
+}
+
+.headerLeft{
+    background-color: rgba(234, 0, 234, 1);
+    height: 8%;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 90%;
+    border-radius: 7px;
+    color: white;
+}
+
+.headerRight{
+    background-color: rgba(0, 0, 0, 1);
+    margin: 10px;
+    text-align: center;
+    font-size: 12.6px;
+    border-radius: 7px;
+    color: white;
+    vertical-align: middle;
+}
+
+.content{
+    background-color: rgba(255, 95, 17, 0.9);
+    height: 150px;
+    margin-top: 5px;
+    font-size: 90%;
+    border-radius: 7px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h4{
+    color: black;
+}
+
+input{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    display: block;
+    text-align: center;
+    border:none;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+
+button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    border:none;
+    font-weight: bold;
+    border-radius: 7px;
+    display: block;
+    text-align: center;
+    font-family: Helvetica;
+    padding: 5px;
+    transition: opacity 1s ease-in-out;
+}
+
+button:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+p{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 320px;
+    height: 320px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-align: center;
+    margin-left: 10px;
+    float: left;
+    font: bold 20px Helvetica;
+    text-shadow: 4px 4px 4px yellow;
+}
+
+span{
+    color: black;
+}
+
+p .imgages{
+    border-radius: 7px;
+    height: 288px;
+    width: 320px;
+    padding-bottom: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.imgages:hover{
+    opacity: 0.5;
+}
+
+h1{
+    font-family: asans-serif;
+}
+

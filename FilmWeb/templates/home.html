@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<link rel="stylesheet" href="static/home.css" />
+
+{% endblock %}
+
+
+<!--Body-->
+
+{% block body %}
+
+<div id="divLeft">
+    <div class="headerLeft">
+        <h1 style="color: rgba(0, 0, 0, 1); ">Search Films</h1>
+    </div>
+
+    <div class="content">
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for x in messages %}
+                    <h4 >{{ x }}</h4> 
+                {% endfor %}
+            {% endif %}
+
+        {% endwith %}
+
+        <form method="post" action="/show">
+
+            <input type="text" name="title" placeholder="title" required>
+
+            <button type="submit" name="submit">Submit</button>
+
+        </form>
+        
+    </div>
+
+</div>
+
+<div id="divRight">
+
+    <div class="headerRight">
+        <h1 style="color: rgba(255, 255, 255, 0.8); "> Films gallery </h1>
+    </div>
+
+    
+    {% for year in data %}
+
+        {% set d = data[year] %}
+
+        {% for imgPath, title in d.items() %}
+            <a href={{title}} title="Click to now more about this film" target="_blank"> <p>
+            <img class="imgages"  src={{imgPath}} alt="Image">Year: <span> {{ year }} </span></p></a>
+        {% endfor %}
+
+    {% endfor %}
+    
+    
+
+</div>
+
+
+{% endblock %}

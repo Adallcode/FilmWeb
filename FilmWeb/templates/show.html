@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+<!--Head-->
+
+{% block head %}
+
+<link rel="stylesheet" href="static/showStyle.css">
+
+{% endblock %}
+
+
+<!--Body-->
+
+{% block body %}
+
+<div id="header">
+    <h1>Film {{ film_title }}</h1>
+</div>
+
+
+<div id="fotodiv">
+    <img src={{image}} alt="Image">
+</div>
+
+
+<div id="rightdiv">
+
+    <div class="content">
+        {% for k, v in data.items() %}
+            <p ><strong>{{ k }}:</strong> {{ v }}</p>
+        {% endfor %}
+    </div>
+
+</div>
+
+
+<div id="back">
+    <form action="/home">
+        <button type="submit" name="back" >Back</button>
+    </form>
+</div>
+
+
+{% endblock %}
