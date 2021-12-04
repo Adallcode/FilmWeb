@@ -7,4 +7,4 @@ In the home page the user will find some default films that are clickable to see
 
 In the right side the user can search for a specific film just entering the film's title.
 
-Technology used here: Python, Flask framework, MySQL, OMDb Api, HTML and CSS.
+Technologies used here: Python, flask framework, MySQL, OMDb API, HTML and CSS.
